@@ -7,9 +7,9 @@ const home = require('./modules/home')
 // 將網址結構符合 / 字串的 request 導向 home 模組 
 router.use('/', home)
 
-// // 引入 restaurants 模組程式碼
-// const booking = require('./modules/booking')
-// router.use('/booking', booking)
+// 引入 shorten 模組程式碼
+const shorten = require('./modules/shorten')
+router.use('/shorten', shorten)
 
 // // 引入 filter 模組程式碼
 // const filter = require('./modules/filter')
