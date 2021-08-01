@@ -11,16 +11,16 @@
     </span>
   </div>
 
-  <form>
-    <div class="form-row mt-3" id="input">
+  <form action="/" method="POST">
+    <div class="form-row mt-3 mb-3" id="input">
       <div class="col-auto">
         <input type="text" name="originalURL" class="form-control" placeholder="Enter original URL here..."
           aria-label="original URL..." aria-describedby="inputURL" value={{keyword}}>
       </div>
     </div>
-  </form>
 
-  <div class="confirm mt-3">
-    <button class="btn btn-outline-danger btn-lg" type="submit" id="confirm-button">Shorten</button>
-  </div>
+    <a href="../">
+      <button class="btn btn-outline-danger btn-lg" type="submit">Shorten</button>
+    </a>
+  </form>
 </div>
