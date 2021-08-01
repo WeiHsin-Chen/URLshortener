@@ -11,9 +11,5 @@ router.use('/', home)
 const shorten = require('./modules/shorten')
 router.use('/shorten', shorten)
 
-// // 引入 filter 模組程式碼
-// const filter = require('./modules/filter')
-// router.use('/filter', filter)
-
 // 匯出路由器
 module.exports = router
