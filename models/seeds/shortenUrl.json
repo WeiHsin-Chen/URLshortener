@@ -1,0 +1,12 @@
+{
+  "shortenUrlSeeds": [
+    {
+      "url": "http://www.google.com",
+      "shortenUrl": "abc45"
+    },
+    {
+      "url": "https://www.youtube.com",
+      "shortenUrl": "123DE"
+    }
+  ]
+}
