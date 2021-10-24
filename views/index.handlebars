@@ -11,16 +11,32 @@
     </span>
   </div>
 
+  {{#if shortenUrl}}
+  <div class="success">
+    <span class="text-dark" style="font-size: 20px;">Success！ Please use this link</span>
+    <div id="shortenUrl">
+      {{protocol}}://{{currentUrl}}/{{shortenUrl}}
+    </div>
+  </div>
+
+  <div class=" confirm mt-3">
+    <button class="btn btn-danger btn-lg" type="submit" id="copyButton" onclick="copyUrl()">Copy</button>
+  </div>
+
+  {{else}}
   <form action="/" method="POST">
     <div class="form-row mt-3 mb-3" id="input">
       <div class="col-auto">
-        <input type="text" name="originalURL" class="form-control" placeholder="Enter original URL here..."
-          aria-label="original URL..." aria-describedby="inputURL" value={{keyword}}>
+        <input type="text" name="inputURL" class="form-control" required placeholder="Enter URL here..."
+          aria-label="URL..." aria-describedby="inputURL" value={{keyword}}>
       </div>
     </div>
 
-    <a href="../">
+    <a href="/">
       <button class="btn btn-outline-danger btn-lg" type="submit">Shorten</button>
     </a>
   </form>
+  {{/if}}
 </div>
+
+<script src='/javascript/copyUrl.js'></script>

@@ -8,6 +8,7 @@ const bodyParser = require('body-parser')
 const routes = require('./routes')
 
 
+
 // setting template engine
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
