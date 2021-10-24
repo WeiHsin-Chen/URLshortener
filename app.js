@@ -7,8 +7,6 @@ const exphbs = require('express-handlebars')
 const bodyParser = require('body-parser')
 const routes = require('./routes')
 
-// rocky - plateau - 48187
-
 // setting template engine
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }))
 app.set('view engine', 'handlebars')
